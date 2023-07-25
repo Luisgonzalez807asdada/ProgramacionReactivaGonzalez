@@ -1,0 +1,23 @@
+
+<form class="example-form" (ngSubmit)="buscar()">
+    <mat-form-field appearance="outline">
+        <mat-label>Ingrese un filtro</mat-label>
+        <input matInput type="text" (input)="applyFilter($event)">
+        <button mat-icon-button matSuffix color="primary" (click)="buscar()">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
+</form>
+
+
+<div class="example-data-list" *ngIf="data">
+    <div *ngIf="data.length > 0; else noDataMessage">
+        <div *ngFor="let item of data" class="example-data-item">
+            <!-- Mostrar los datos en la lista aquí -->
+            <p>{{ item.name.common }}</p>
+        </div>
+    </div>
+    <ng-template #noDataMessage>
+        <p>No hay datos disponibles</p>
+    </ng-template>
+</div>

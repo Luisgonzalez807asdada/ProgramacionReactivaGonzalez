@@ -1,0 +1,30 @@
+
+.example-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.mat-form-field {
+    width: 300px;
+}
+
+
+.mat-icon-button {
+    margin-left: 8px;
+}
+
+
+.example-data-list {
+    margin: 20px;
+}
+
+
+.example-data-item {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
